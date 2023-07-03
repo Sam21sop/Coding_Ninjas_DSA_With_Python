@@ -11,8 +11,8 @@ Python Logical Operator:
 x = 5
 y = 5
 
-#is membership
+#is identity operator
 print(x is y)
 
-#is not membership
+#is not identity operator
 print(x is not y)
