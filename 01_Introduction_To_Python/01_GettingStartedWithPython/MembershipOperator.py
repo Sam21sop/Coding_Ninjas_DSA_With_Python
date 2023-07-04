@@ -8,4 +8,11 @@ Python Logical Operator:
     value not present in the object.
 '''
 
+string = 'aeiou'
+s = 'a'
 
+#in operator 
+print(s in string)
+
+#not in operator
+print(s not in string)
