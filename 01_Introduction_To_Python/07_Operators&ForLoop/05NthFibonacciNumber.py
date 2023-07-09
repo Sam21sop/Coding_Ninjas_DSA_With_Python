@@ -13,4 +13,4 @@ if __name__ == '__main__':
     n = int(input())
     result = fibonacci(n)
     print(result)
-
+    
