@@ -1,4 +1,7 @@
 def binToDec(number):
+    '''
+    Nth_digit * 2 ^ ith
+    '''
     decimal = 0
     i = 0
     while number != 0:
