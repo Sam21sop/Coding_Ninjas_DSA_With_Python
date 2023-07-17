@@ -10,7 +10,7 @@ def findUnique(arr, n) :
             j += 1
         if j == n:
             return arr[i]
-            
+    return sys.maxsize
 
 #Taking Input Using Fast I/O
 def takeInput() :
