@@ -1,16 +1,14 @@
-public static void print(int n){
-    if(n < 0){
-        return;
-    }
-    if(n == 0){
-        System.out.println(n);
-        return;
-    }
-    print(n--);
-    System.out.print(n+" ");
-}
+def show(n):
+    if n < 0:
+        return
+    if n == 0:
+        print(n)
+        return
+    show(n-1)
+    print(n, end=' ')
 
-public static void main(String[] args) {
-    int num = 3;
-    print(num);
-}
+def main():
+    num = 3
+    show(num)
+
+main()
