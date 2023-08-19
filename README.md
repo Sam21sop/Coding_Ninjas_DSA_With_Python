@@ -1,2 +1,2 @@
-# Coding_Ninjas_2023
-Career Camp Web developer
+# Coding_ Ninjas 2023
+Data Structure & Algorithm with Python
