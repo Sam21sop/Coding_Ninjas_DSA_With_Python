@@ -1,4 +1,5 @@
 from sys import stdin, setrecursionlimit
+setrecursionlimit(10**7)
 
 class Node:
     def __init__(self, data) -> None:
@@ -6,14 +7,13 @@ class Node:
         self.next = None
 
 
-def fun(start):
-    if start is None:
-        return
-    print(start.data, end=' ')
-    if start.next != None:
-        fun(start.next.next)
-    print(start.data, end=' ')
-
+def delete_recursively(head, position):
+    if head is None:
+        return 
+    if position == 0:
+        return head.next
+    head.next = delete_recursively(head.next, position-1)
+    return head
 
 def take_input():
     head = None
@@ -35,13 +35,17 @@ def take_input():
 def display_linked_list(head):
     current = head
     while current:
-        print(current.data, end=' --> ')
+        print(current.data, end=' ')
         current = current.next
+    print()
 
 
 def main():
     head = take_input()
-    fun(head)
+    display_linked_list(head)
+    head = delete_recursively(head, 2)
+    display_linked_list(head)
+
 
 if __name__ == '__main__':
     main()
