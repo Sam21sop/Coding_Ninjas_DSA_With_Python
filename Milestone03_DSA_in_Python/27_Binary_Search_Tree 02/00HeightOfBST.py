@@ -9,6 +9,7 @@ class TreeNode:
         self.left = None
         self.right = None
 
+
 def tree_height(root:TreeNode):
     if root is None:
         return 0                                #for node count
@@ -18,6 +19,7 @@ def tree_height(root:TreeNode):
     right_height = tree_height(root.right)      #recursive call on right subtree
 
     return 1 + max(left_height, right_height)   
+
 
 def build_tree(level_order:list[int]):
     index = 0
