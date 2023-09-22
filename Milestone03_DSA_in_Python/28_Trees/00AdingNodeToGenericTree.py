@@ -20,3 +20,7 @@ root.children[2].add_child(TreeNode("H"))
 # Add children to node E
 root.children[0].children[0].add_child(TreeNode("I"))
 root.children[0].children[0].add_child(TreeNode("J"))
+
+
+#print tree recursively
+root.display()
