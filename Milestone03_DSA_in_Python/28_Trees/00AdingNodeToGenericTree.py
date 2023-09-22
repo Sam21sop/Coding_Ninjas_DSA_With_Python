@@ -1,16 +1,22 @@
 from GenericTree import TreeNode
 
-#create nodes 
-n1 = TreeNode(5)
-n2 = TreeNode(2)
-n3 = TreeNode(9)
-n4 = TreeNode(8)
-n5 = TreeNode(15)
-n6 = TreeNode(1)
-n7 = TreeNode(7)
 
+# Create the root node
+root = TreeNode("A")
 
-n1.childrens.extend([n1, n2, n3, n4, n5])     # add childer for node 5
+# Add children to the root node
+root.add_child(TreeNode("B"))
+root.add_child(TreeNode("C"))
+root.add_child(TreeNode("D"))
 
-n3.childrens.extend([n6, n7])                 #add children of node 3
+# Add children to node B
+root.children[0].add_child(TreeNode("E"))
+root.children[0].add_child(TreeNode("F"))
 
+# Add children to node D
+root.children[2].add_child(TreeNode("G"))
+root.children[2].add_child(TreeNode("H"))
+
+# Add children to node E
+root.children[0].children[0].add_child(TreeNode("I"))
+root.children[0].children[0].add_child(TreeNode("J"))
