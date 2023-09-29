@@ -83,7 +83,9 @@ if __name__ == '__main__':
 # 4
 # abc def ghi hg
 # hi
+# true
 
 # 4
 # abc def ghi cba
 # de
+# false

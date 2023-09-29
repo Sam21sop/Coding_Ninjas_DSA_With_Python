@@ -1,14 +1,14 @@
 from sys import stdin 
 
 class TrieNode:
-    def __init__(self, char='\0') -> None:
+    def __init__(self, char='\0'):
         self.char = char
         self.terminal = False
         self.children = {}
 
 
 class Trie:
-    def __init__(self) -> None:
+    def __init__(self):
         self.__root = TrieNode()
         self.num_word = 0
 
@@ -23,17 +23,6 @@ class Trie:
                 curr = curr.children[char]
         curr.terminal = True
         self.num_word += 1
-
-
-    def search(self, word):
-        curr = self.__root
-        for char in word:
-            if char not in curr.children:
-                return False
-            else:
-                curr = curr.children[char]
-        return True
-
 
 
     def printS(self, root, s):
