@@ -1,6 +1,7 @@
 from sys import stdin
 
 def LCS(string1:str, string2:str):
+    '''Longest Common Subsequence'''
     length_str1 = len(string1)
     length_str2 = len(string2)
     sub_problem_memo = [[0] * (length_str2+10) for _ in range(length_str1+10)]
