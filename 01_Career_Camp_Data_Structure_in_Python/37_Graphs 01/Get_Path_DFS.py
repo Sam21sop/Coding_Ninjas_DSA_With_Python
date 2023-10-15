@@ -1,3 +1,6 @@
+from sys import setrecursionlimit
+setrecursionlimit(10**6)
+
 
 def __getPathDFSHelper(adjMatrix, nVertices, start_edge, end_edge, visited):
     if start_edge == end_edge:

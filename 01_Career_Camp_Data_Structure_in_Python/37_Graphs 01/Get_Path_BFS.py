@@ -1,4 +1,6 @@
 from collections import deque
+from sys import setrecursionlimit
+setrecursionlimit(10**6)
 
 def get_path_bfs(edges, visited, V1, V2):
     if V1 == V2:
