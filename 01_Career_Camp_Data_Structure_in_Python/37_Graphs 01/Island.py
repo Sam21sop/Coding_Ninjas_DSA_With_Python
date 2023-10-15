@@ -11,7 +11,7 @@ def DFS(graph, start_vertex, visited):
             DFS(graph, neighbore, visited)
 
 
-def countConnectedGroup(V, E, edges):
+def countConnectedGroup(V, edges):
     '''Function Count the number of connected Graph'''
     graph = defaultdict(list)
     for edge in edges:                      #create adjancy list
@@ -34,7 +34,7 @@ def main():
     for i in range(E):
         a, b = map(int, stdin.readline().strip().split())
         graph.append((a, b))
-    result = countConnectedGroup(V, E, graph)
+    result = countConnectedGroup(V, graph)
     print(result)     
 
 
