@@ -1,4 +1,5 @@
 from sys import stdin
+
 def getCycles(graph, n):
     cycle_count = 0
     for i in range(n-2):
