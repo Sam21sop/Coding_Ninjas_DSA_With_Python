@@ -37,7 +37,7 @@ def mergeBST(root1, root2):
             merged_element.append(element2[i])
             j += 1
     while i < len(element1):
-        merged_element.append(element1[i])
+        merged_element.append(element1[j])
         i += 1
     while j < len(element2):
         merged_element.append(element2[j])
@@ -74,7 +74,7 @@ def display_tree(root):
     if root is None:
         return
     display_tree(root.left)
-    print(root.data end=' ')
+    print(root.data, end=' ')
     display_tree(root.right)
 
 
